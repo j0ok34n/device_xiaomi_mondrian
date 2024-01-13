@@ -394,10 +394,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES_DEBUG += \
     update_engine_client
 
-# USAP Pool
-PRODUCT_SYSTEM_PROPERTIES += \
-    persist.device_config.runtime_native.usap_pool_enabled=true
-
 PRODUCT_BOOT_JARS += \
     WfdCommon
 
