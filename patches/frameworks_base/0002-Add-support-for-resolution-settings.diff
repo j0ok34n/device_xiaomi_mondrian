@@ -1,12 +1,11 @@
 diff --git a/core/java/android/provider/Settings.java b/core/java/android/provider/Settings.java
-index 6b34f46e1b03..e67cd6487e10 100644
+index f02c24a9ee22..b91229a9bfa6 100644
 --- a/core/java/android/provider/Settings.java
 +++ b/core/java/android/provider/Settings.java
-@@ -4596,7 +4596,23 @@ public final class Settings {
-          * SCREEN_BRIGHTNESS_MODE value for automatic mode.
+@@ -4622,6 +4622,22 @@ public final class Settings {
           */
          public static final int SCREEN_BRIGHTNESS_MODE_AUTOMATIC = 1;
-+        
+
 +        /**
 +         * Screen resolution mode.
 +         *  0 = disable
@@ -15,17 +14,17 @@ index 6b34f46e1b03..e67cd6487e10 100644
 +         */
 +        @Readable
 +        public static final String SCREEN_RESOLUTION_MODE = "screen_resolution_mode";
- 
++
 +        /**
 +         * User resolution density.
 +         * @hide
 +         */
 +        @Readable
 +        public static final String SCREEN_USER_DENSITY = "screen_user_density";
-+        
++
          /**
-          * Control whether to enable adaptive sleep mode.
-          * @deprecated Use {@link android.provider.Settings.Secure#ADAPTIVE_SLEEP} instead.
+          * Indicates the state of DC dimming AUTO mode:
+          *   0 - Off
 diff --git a/packages/SettingsLib/src/com/android/settingslib/display/DisplayDensityUtils.java b/packages/SettingsLib/src/com/android/settingslib/display/DisplayDensityUtils.java
 index ac7be53b7169..1a7541fa85cb 100644
 --- a/packages/SettingsLib/src/com/android/settingslib/display/DisplayDensityUtils.java
